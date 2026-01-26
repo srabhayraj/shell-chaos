@@ -1,2 +1,2 @@
 # shell-chaos
-Shell-scripting projects
+Shell-scripting projects to practice the automation
