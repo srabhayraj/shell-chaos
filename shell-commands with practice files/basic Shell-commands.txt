@@ -1,0 +1,87 @@
+ubuntu@ip-172-31-46-125:~$ history
+    1  vi node_health.sh
+    2  cat node_health.sh
+    3  chmod 777 node_health.sh
+    4  ./node_health.sh
+    5  vi node_health.sh
+    6  ./node_health.sh
+    7  vi node_health.sh
+    8  ./node_health.sh
+    9  ps
+   10  ps -ef
+   11  ps -ef | pid | grep amazon
+   12  ps -ef |grep amazon
+   13  vi node_health.sh
+   14  ps -ef |grep amazon | awk -F" " '{print $2}'
+   15  vi abhay
+   16  test |grep abhay
+   17  grep abhay test
+   18  vi test
+   19  test |grep abhay
+   20  grep abhay test
+   21  grep name test
+   22  test |grep name
+   23  grep name test
+   24  grep name test |awk -F" " '{print $4}'
+   25  grep name test |awk -F" " '{print $4}' && grep employee test |aws -F" " '{print $5}'
+   26  grep employee test |aws -F" " '{print $5}'
+   27  grep employee test |awks -F" " '{print $5}'
+   28  grep employee test |awk -F" " '{print $5}'
+   29  grep name test |awk -F" " '{print $4}' && grep employee test |awk -F" " '{print $5}'
+   30  grep name test |awk -F" " '{print $4}' || grep employee test |awk -F" " '{print $5}'
+   31  grep name test |awk -F" " '{print $4}' && grep employee test |awk -F" " '{print $5}'
+   32  vi node_health.sh
+   33  curl https://github.com/srabhayraj/GitHub-Actions-Playground/blob/main/README.md |grep -i jenkins
+   34  curl https://github.com/srabhayraj/GitHub-Actions-Playground/blob/main/README.md |grep sr.abhayraj@gmail.com
+   35  pwd
+   36  la
+   37  ls
+   38  ls -l
+   39  curl https://github.com/iam-veeramalla/sandbox/blob/main/log/dummylog01122022.log |grep -i error
+   40  curl https://github.com/iam-veeramalla/sandbox/blob/main/log/dummylog01122022.log | grep ERROR
+   41  curl -X GET api.amazon.com
+   42  curl -X GET api.github.com
+   43  ls
+   44  ls -a
+   45  wget https://github.com/iam-veeramalla/sandbox/blob/main/log/dummylog01122022.log
+   46  ls
+   47  cat dummylog01122022.log |grep ERROR
+   48  find
+   49  ls /etc
+   50  find nftables.conf
+   51  find / -name nftables.conf
+   52  sudo find / -name nftables.conf
+   53  vi ifelseCondition.sh
+   54  chmod 777 ifelseCondition.sh
+   55  ./ifelseCondition.sh
+   56  vi ifelseCondition.sh
+   57  ./ifelseCondition.sh
+   58  vi ifelseCondition.sh
+   59  ./ifelseCondition.sh
+   60  vi ifelseCondition.sh
+   61  ./ifelseCondition.sh
+   62  vi ifelseCondition.sh
+   63  cat ifelseCondition.sh
+   64  ./ifelseCondition.sh
+   65  vi ifelseCondition.sh
+   66  ./ifelseCondition.sh
+   67  vi ifelseCondition.sh
+   68  ./ifelseCondition.sh
+   69  vi ifelseCondition.sh
+   70  ./ifelseCondition.sh
+   71  vi ifelseCondition.sh
+   72  ./ifelseCondition.sh
+   73  vi ifelseCondition.sh
+   74  ./ifelseCondition.sh
+   75  vi ifelseCondition.sh
+   76  ./ifelseCondition.sh
+   77  vi ifelseCondition.sh
+   78  ./ifelseCondition.sh
+   79  vi ifelseCondition.sh
+   80  ./ifelseCondition.sh
+   81  with [ (square brackets) when performing operation on numbers we should use -lt. -gt. -eq or use (( )) double common brackets if want to use <,>,= these operators with numberic, [ use in string operations with these operators <,>,=
+   82  ls
+   83  trap
+   84  man trap
+   85  python3 -m http.server 8000
+   86  history
