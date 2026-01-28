@@ -10,7 +10,7 @@
 #
 # ################################################
 #
-set -x
+#set -x // Uncomment for debugging
 #
 # Resources that will be tracked:
 # AWS S3
