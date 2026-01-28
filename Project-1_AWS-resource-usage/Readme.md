@@ -6,7 +6,7 @@
 
 ## 📌 Overview
 
-`aws_resource_report.sh` is a shell script designed to track basic AWS resource usage using the **AWS CLI**.  
+`aws_usage.sh` is a shell script designed to track basic AWS resource usage using the **AWS CLI**.  
 It automates reporting for common AWS services and can be scheduled using **cron jobs** for periodic execution.
 
 This project demonstrates:
@@ -32,13 +32,13 @@ Before running the script, ensure the following:
 ## 🚀 How to Run
 
 Step 1: Make the script executable
-chmod +x aws_resource_report.sh
+chmod +x aws_usage.sh
 
 Step 2: Test manually
-./aws_resource_report.sh
+./aws_usage.sh
 
 Step 3: Verify logs
-cat /var/log/aws_resource_report.log
+cat /var/log/aws_usage.log
 
 ### ⏰ Automate with Cron Job
 Step 4: Open crontab
