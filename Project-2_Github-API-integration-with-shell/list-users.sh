@@ -11,7 +11,7 @@
 ############################################
 
 #This function is created to let user know to give all arguments if user doesn't give it.
-#helper()
+helper()
 
 # Github API URL
 API_URL="https://api.github.com"
@@ -30,7 +30,7 @@ function github_api_get {
         local url="${API_URL}/${endpoint}"
 
         #Send a GET request to the Github API with authentication
-        curl -s -u "${USERNAME}:${TOEKN}" "$url"
+        curl -s -u "${USERNAME}:${GH_TOKEN}" "$url"
 }
 
 #Function to list users with read access to the repository
@@ -51,11 +51,12 @@ function list_users_with_read_access {
 
 }
 
-#function helper{
-#       expected_cmd_args=2
-#       if [ $# -ne #expected_cmd_args]; then
-#               echo "Please re-execute the script with required command line arguments"
-#       fi
+function helper{
+       expected_cmd_args=2
+       if [ $# -ne #expected_cmd_args]; then
+               echo "Please re-execute the script with required command line arguments"
+       fi
+}
 
 #Main script
 echo "Listing users with read access to ${REPO_OWNER}/${REPO_NAME}..."
