@@ -93,16 +93,5 @@ Integrate alerts with Slack or CloudWatch
 
 ## 👨‍💻 Author
 
-Abhay Raj Singh Rathore
+Abhay Raj Singh Rathore\
 Cloud & DevOps Engineer | AWS | Shell | CI/CD
-
-
----
-
-If you want, next we can:
-- 🔧 **Enhance this project to v2/v3**
-- 📌 **Add interview questions based on this script**
-- 🐳 **Dockerize it**
-- 📈 **Convert it into a monitoring-style project**
-
-Just say the word.
