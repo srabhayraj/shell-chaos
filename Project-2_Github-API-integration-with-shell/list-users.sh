@@ -11,7 +11,7 @@
 ############################################
 
 #This function is created to let user know to give all arguments if user doesn't give it.
-helper()
+# helper()
 
 # Github API URL
 API_URL="https://api.github.com"
@@ -38,8 +38,13 @@ function list_users_with_read_access {
         local endpoint="repos/${REPO_OWNER}/${REPO_NAME}/collaborators"
 
         #Fetch the list of collaborators on the repository
-        collaborators="$(github_api_get "$endpoint" | jq -r '.[] | select(.permissions.pull == true) | .login')"
+        collaborators="$(github_api_get "$endpoint" | jq -r '.[] | select(.permissions.admin == false) | .login')"
+        
         #select(.permissions.pull == true) this logic is used to print the username who has read access, in place if permissions.pull==true we can also use permission.admin==false that will also work the same, and we use .login to get or parse the username only not the complete json
+        #We can also use the below logic to get the read access users
+        #select(.permissions.pull == true and .permissions.push == false and .permissions.admin == false)
+
+
 
         #Display the list of collaborators with the read access
         if [[ -z "$collaborators" ]]; then
@@ -51,15 +56,23 @@ function list_users_with_read_access {
 
 }
 
-function helper{
-       expected_cmd_args=2
-       if [ $# -ne #expected_cmd_args]; then
-               echo "Please re-execute the script with required command line arguments"
-       fi
-}
+# function helper{
+#        expected_cmd_args=2
+#        if [ $# -ne $expected_cmd_args]; then
+#                echo "Please re-execute the script with required command line arguments"
+#        fi
+# }
+
+if [[ -z "$USERNAME" || -z "$TOKEN" ]]; then
+    echo "ERROR: Please export GitHub username and GH_TOKEN before running."
+    exit 1
+fi
+
 
 #Main script
-echo "Listing users with read access to ${REPO_OWNER}/${REPO_NAME}..."
+echo "-----------------------------------"
+echo "Read-only users for ${REPO_OWNER}/${REPO_NAME}"
+echo "-----------------------------------"
 list_users_with_read_access
 
 #End of the script
