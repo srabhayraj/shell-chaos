@@ -11,7 +11,7 @@ This repository contains **shell scripting projects** created to strengthen my u
 The focus of this repo is:
 - Writing practical shell scripts
 - Automating repetitive operational tasks
-
+- Understanding how shell scripts fit into CI/CD and Cloud workflows
 
 ---
 
